@@ -1,3 +1,5 @@
+https://szymekcendecki.github.io/manualAudaces/
+
 # Audaces handbook
 This is the Audaces manual.
 
