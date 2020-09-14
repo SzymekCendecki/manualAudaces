@@ -9,10 +9,9 @@ html, body {
     height: 100%;
 }
 
-
-header, footer, nav{
+header, nav, footer{
     width: 100%;
- 
+    height: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,9 +23,34 @@ h1, h2{
     text-align: center;
 }
 
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    
+    #languageBtn{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #0f52ba;
+        outline: none;
+        font-size: 1.6em;
+        font-weight: bold;
+        background-color: #0f52ba;
+        color: #fff;
+    }
+
+    #languageBtn:active{
+        background-color: #72a5f4;
+        border: 4px solid #0f52ba;
+        color: #000;
+    }
+}
+
 #mainContainer{
     width: 90%;
     height: 70%;
     margin: 0 auto;
-  
+    overflow: auto;  
 }
