@@ -12,7 +12,7 @@ html, body {
 
 header, footer, nav{
     width: 100%;
-    border: 1px solid black;
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,10 +24,9 @@ h1, h2{
     text-align: center;
 }
 
-
 #mainContainer{
     width: 90%;
     height: 70%;
     margin: 0 auto;
-    border: 1px solid black;
+  
 }
