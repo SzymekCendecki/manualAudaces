@@ -15,12 +15,16 @@ header, nav, footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;     
+    align-items: center;  
 }
 
 h1, h2{
     width: 100%;
     text-align: center;
+}
+
+header{
+    display: none;
 }
 
 nav{
@@ -50,7 +54,7 @@ nav{
 
 #mainContainer{
     width: 90%;
-    height: 70%;
+    height: 80%;
     margin: 0 auto;
     overflow: auto;  
 }
