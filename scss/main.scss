@@ -16,15 +16,12 @@ header, nav, footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;  
+    border: 1px solid black;
 }
 
 h1, h2{
     width: 100%;
     text-align: center;
-}
-
-header{
-    display: none;
 }
 
 nav{
@@ -33,7 +30,7 @@ nav{
     justify-content: space-around;
     align-items: center; 
     
-    #languageBtn{
+    #languageBtn, #races, #weapon, #magic, #tales{
         width: 50px;
         height: 50px;
         border-radius: 10px;
@@ -45,11 +42,63 @@ nav{
         color: #fff;
     }
 
+    #races, #weapon, #magic{
+        font-size: 1em;
+    }
+
+    #races{
+        background-color: #009900;
+        border: 1px solid #009900;
+    }
+
+    #races:active{
+        background-color: #00e600;
+        border: 4px solid #009900;
+        color: #000;
+    }
+
+    #weapon{
+        background-color: #cc3300;
+        border: 1px solid#cc3300;
+    }
+
+    #weapon:active{
+        background-color: #ff6633;
+        border: 4px solid #cc3300;
+        color: #000;
+    }
+
+    #magic{
+        background-color: #cc00cc;
+        border: 1px solid #cc00cc;
+        font-size: 0.9em;
+    }
+
+    #magic:active{
+        background-color: #ff66ff;
+        border: 4px solid #cc00cc;
+        color: #000;
+    }
+
+    #tales{
+        background-color: #595959;
+        border: 1px solid #595959;
+        font-size: 0.7em;
+    }
+
+    #tales:active{
+        background-color: #a6a6a6;
+        border: 4px solid #595959;
+        color: #000;
+    }
+
     #languageBtn:active{
         background-color: #72a5f4;
         border: 4px solid #0f52ba;
         color: #000;
     }
+
+
 }
 
 #mainContainer{
