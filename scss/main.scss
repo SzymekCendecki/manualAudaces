@@ -15,9 +15,7 @@ header, nav, footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;  
-    border: 1px solid black;
-}
+    align-items: center;  }
 
 h1, h2{
     width: 100%;
@@ -25,6 +23,7 @@ h1, h2{
 }
 
 nav{
+    margin: 10% 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
