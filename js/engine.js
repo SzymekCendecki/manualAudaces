@@ -77,5 +77,47 @@ module.exports = __webpack_require__(1);
 "use strict";
 
 
+var _races = __webpack_require__(2);
+
+console.log(_races.racesPlTxt, _races.racesENTxt);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var racesPlTxt = exports.racesPlTxt = {
+    "human": "człowiek",
+    "halforc": "półork",
+    "orc": "ork",
+    "halfelv": "półelf",
+    "elv": "elf",
+    "dwarf": "krasnolud",
+    "gnome": "gnom",
+    "halfling:": "niziołek",
+    "goblin": "goblin",
+    "troll": "trol",
+    "semigiant": "półolbrzym"
+};
+
+var racesENTxt = exports.racesENTxt = {
+    "human": "human",
+    "halforc": "halforc",
+    "orc": "orc",
+    "halfelv": "halfelv",
+    "elv": "elv",
+    "dwarf": "dwarf",
+    "gnome": "gmome",
+    "halfling:": "halfling",
+    "goblin": "goblin",
+    "troll": "troll",
+    "semigiant": "semigiant"
+};
+
 /***/ })
 /******/ ]);
