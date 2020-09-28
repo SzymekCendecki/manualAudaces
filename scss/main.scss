@@ -106,3 +106,11 @@ nav{
     margin: 0 auto;
     overflow: auto;  
 }
+
+
+#human, #halforc, #orc, #halfelv, #elv, #dwarf, #gnome, #halfling, #goblin, #troll, #semigiant{
+    text-align: center;
+    border: 1px solid #000;
+    height: 5%;
+    margin: 7% 0 0 0;
+}
