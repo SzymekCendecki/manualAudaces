@@ -81,6 +81,17 @@ var _races = __webpack_require__(2);
 
 console.log(_races.racesPlTxt, _races.racesENTxt);
 
+document.querySelector("#languageBtn").addEventListener("click", function () {
+
+    var langTxt = document.querySelector("#languageBtn").textContent;
+
+    if (langTxt == "en") {
+        document.querySelector("#languageBtn").innerHTML = "pl";
+    } else {
+        document.querySelector("#languageBtn").innerHTML = "en";
+    }
+});
+
 document.querySelector("#races").addEventListener("click", function () {
     console.log("działa");
 
@@ -112,6 +123,23 @@ document.querySelector("#races").addEventListener("click", function () {
             break;
 
     }
+
+    document.querySelector("#human").addEventListener("click", function () {
+        var langTxt = document.querySelector("#languageBtn").textContent;
+
+        console.log(_races.humanPl);
+
+        switch (langTxt) {
+            case 'en':
+                document.querySelector("#mainContainer").innerHTML = _races.humanPl;
+                break;
+
+            case 'pl':
+                document.querySelector("#mainContainer").innerHTML = _races.humanEn;
+                break;
+
+        }
+    });
 });
 
 /***/ }),
@@ -152,9 +180,9 @@ var racesENTxt = exports.racesENTxt = {
     "semigiant": "semigiant"
 };
 
-var human = exports.human = {
-    "human": "Człowiek jedna z najbardziej licznych ras (ustępują jedynie goblinom). Są wszechstronni i wszędobylscy, dlatego też można spotkać ich na wszystkich kontynentach, parających się różnymi profesjami. Podstawowe cechy: wzrost: 150 - 210cm, waga: 40 - 120kg. Wiek: do 100 lat. Profesja: każda. Modyfikatory rasowe: brak."
-};
+var humanPl = exports.humanPl = "Człowiek jedna z najbardziej licznych ras (ustępują jedynie goblinom). Są wszechstronni i wszędobylscy, dlatego też można spotkać ich na wszystkich kontynentach, parających się różnymi profesjami. Podstawowe cechy: wzrost: 150 - 210cm, waga: 40 - 120kg. Wiek: do 100 lat. Profesja: każda. Modyfikatory rasowe: brak.";
+
+var humanEn = exports.humanEn = "Man is one of the most numerous races (second only to goblins). They are versatile and ubiquitous, therefore you can meet them on all continents, working in various professions. Basic features: height: 150 - 210 cm, weight: 40 - 120 kg. Age: up to 100 years. Profession: Any. Racial modifiers: none.";
 
 var halfOrc = exports.halfOrc = {
     "halfOrc": "Rasa ta posiada wymieszane cehy ludzi oraz orków. Są silniejsze i wytrzymasze niż przeciętny człowiek. Niestety od człowiek są mniej inteligentne i mniej charyzmatyczne. Wielu półorków stanowi ochronę karawan. Podstawowe cechy: wzrost: 170 - 220cm, waga: 50 - 140kg. Wiek: do 110 lat. Preferowana profesja: wojownik. Modyfikatory: siła +3, wytrzymałość +3, inteligencja -3, charyzma -3."

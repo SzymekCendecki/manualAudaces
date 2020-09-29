@@ -26,9 +26,11 @@ export const racesENTxt = {
     "semigiant":"semigiant"
 }
 
-export const human = {
-    "human":"Człowiek jedna z najbardziej licznych ras (ustępują jedynie goblinom). Są wszechstronni i wszędobylscy, dlatego też można spotkać ich na wszystkich kontynentach, parających się różnymi profesjami. Podstawowe cechy: wzrost: 150 - 210cm, waga: 40 - 120kg. Wiek: do 100 lat. Profesja: każda. Modyfikatory rasowe: brak."
-}
+export const humanPl = "Człowiek jedna z najbardziej licznych ras (ustępują jedynie goblinom). Są wszechstronni i wszędobylscy, dlatego też można spotkać ich na wszystkich kontynentach, parających się różnymi profesjami. Podstawowe cechy: wzrost: 150 - 210cm, waga: 40 - 120kg. Wiek: do 100 lat. Profesja: każda. Modyfikatory rasowe: brak.";
+
+export const humanEn = "Man is one of the most numerous races (second only to goblins). They are versatile and ubiquitous, therefore you can meet them on all continents, working in various professions. Basic features: height: 150 - 210 cm, weight: 40 - 120 kg. Age: up to 100 years. Profession: Any. Racial modifiers: none.";
+
+
 
 export const halfOrc = {
     "halfOrc":"Rasa ta posiada wymieszane cehy ludzi oraz orków. Są silniejsze i wytrzymasze niż przeciętny człowiek. Niestety od człowiek są mniej inteligentne i mniej charyzmatyczne. Wielu półorków stanowi ochronę karawan. Podstawowe cechy: wzrost: 170 - 220cm, waga: 50 - 140kg. Wiek: do 110 lat. Preferowana profesja: wojownik. Modyfikatory: siła +3, wytrzymałość +3, inteligencja -3, charyzma -3."
