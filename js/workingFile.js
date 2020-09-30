@@ -1,73 +1,62 @@
-import { racesPlTxt, racesENTxt, humanPl, humanEn, halforc, orc, halfelv, elv, dwarf, gnome, halfling, goblin, troll, semigiant } from './races.js';
+import { racesPlTxt, human, halforc, orc, halfelv, elv, dwarf, gnome, halfling, goblin, troll, semigiant } from './races.js';
 
-console.log(racesPlTxt, racesENTxt);
-
-
-document.querySelector("#languageBtn").addEventListener("click", () =>{
-
-    let langTxt = document.querySelector("#languageBtn").textContent;
-
-    if(langTxt == "en"){
-        document.querySelector("#languageBtn").innerHTML = "pl";
-    }else{
-        document.querySelector("#languageBtn").innerHTML = "en";
-    }
-
-})
+//let clickOption = what => {
+//    console.log(what);
+//}  
 
 document.querySelector("#races").addEventListener("click", ()=>{
-    console.log("działa");
 
     document.querySelector("#mainContainer").innerHTML = "";
-
-    let langTxt = document.querySelector("#languageBtn").textContent;
-   
-    switch (langTxt) {
-        case 'en':
-
-            for(let i = 0; i<Object.keys(racesPlTxt).length; i++){
-                const newP = document.createElement("p");
-                newP.id = Object.keys(racesPlTxt)[i];
-                newP.innerHTML = Object.values(racesPlTxt)[i];
-                document.querySelector('#mainContainer').appendChild(newP);
-            }
-     
-        
-  
-        break;
-
-        case 'pl':
-
-            for(let i = 0; i<Object.keys(racesENTxt).length; i++){
-                const newP = document.createElement("p");
-                newP.id = Object.keys(racesENTxt)[i];
-                newP.innerHTML = Object.values(racesENTxt)[i];
-                document.querySelector('#mainContainer').appendChild(newP);
-            }
-   
-        break;
-
+    
+    for(let i = 0; i<Object.keys(racesPlTxt).length; i++){
+        const newP = document.createElement("p");
+        newP.id = Object.keys(racesPlTxt)[i];
+        newP.innerHTML = Object.values(racesPlTxt)[i];
+        document.querySelector('#mainContainer').appendChild(newP);
     }
-
+     
     document.querySelector("#human").addEventListener("click", () =>{
-        let langTxt = document.querySelector("#languageBtn").textContent;
+        document.querySelector("#mainContainer").innerHTML = human;
+    })
 
-        console.log(humanPl);
+    document.querySelector("#halforc").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = halforc;
+    })
 
-          
-        switch (langTxt) {
-            case 'en':
-                document.querySelector("#mainContainer").innerHTML = humanPl;
-                break;
-    
-            case 'pl':
-                document.querySelector("#mainContainer").innerHTML = humanEn;
-                break;
-    
-        }
+    document.querySelector("#orc").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = orc;
+    })
+
+    document.querySelector("#halfelv").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = halfelv;
+    })
+
+    document.querySelector("#elv").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = elv;
+    })
+
+    document.querySelector("#dwarf").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = dwarf;
+    })
+
+    document.querySelector("#gnome").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = gnome;
+    })
+
+    document.querySelector("#halfling").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = halfling;
+    })
+
+    document.querySelector("#goblin").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = goblin;
+    })
+
+    document.querySelector("#troll").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = troll;
+    })
+
+    document.querySelector("#semigiant").addEventListener("click", () =>{
+        document.querySelector("#mainContainer").innerHTML = semigiant;
     })
 
 })
-
-
-
