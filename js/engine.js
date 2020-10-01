@@ -79,10 +79,6 @@ module.exports = __webpack_require__(1);
 
 var _races = __webpack_require__(2);
 
-//let clickOption = what => {
-//    console.log(what);
-//}  
-
 document.querySelector("#races").addEventListener("click", function () {
 
     document.querySelector("#mainContainer").innerHTML = "";
@@ -94,49 +90,15 @@ document.querySelector("#races").addEventListener("click", function () {
         document.querySelector('#mainContainer').appendChild(newP);
     }
 
-    document.querySelector("#human").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.human;
-    });
+    var _loop = function _loop(_i) {
+        document.querySelector("#" + Object.keys(_races.racesPlTxt)[_i]).addEventListener("click", function () {
+            document.querySelector("#mainContainer").innerHTML = _races.races[_i];
+        });
+    };
 
-    document.querySelector("#halforc").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.halforc;
-    });
-
-    document.querySelector("#orc").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.orc;
-    });
-
-    document.querySelector("#halfelv").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.halfelv;
-    });
-
-    document.querySelector("#elv").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.elv;
-    });
-
-    document.querySelector("#dwarf").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.dwarf;
-    });
-
-    document.querySelector("#gnome").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.gnome;
-    });
-
-    document.querySelector("#halfling").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.halfling;
-    });
-
-    document.querySelector("#goblin").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.goblin;
-    });
-
-    document.querySelector("#troll").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.troll;
-    });
-
-    document.querySelector("#semigiant").addEventListener("click", function () {
-        document.querySelector("#mainContainer").innerHTML = _races.semigiant;
-    });
+    for (var _i = 0; _i < Object.keys(_races.racesPlTxt).length; _i++) {
+        _loop(_i);
+    }
 });
 
 /***/ }),
@@ -170,7 +132,7 @@ var racesENTxt = exports.racesENTxt = {
     "halfelv": "halfelv",
     "elv": "elv",
     "dwarf": "dwarf",
-    "gnome": "gmome",
+    "gnome": "gnome",
     "halfling": "halfling",
     "goblin": "goblin",
     "troll": "troll",
@@ -200,6 +162,8 @@ var goblin = exports.goblin = "Chyba najbardziej znienawidzona rasa na świecie.
 var troll = exports.troll = "Półdzikie plemiona zamieszkują bagna oraz wrzosowiska. Podstawowe cechy: wzrost: 220 - 260cm, waga: 150 - 200kg. Wiek: do 150 lat. Preferowana profesja: wojownik lub czarodziej. Modyfikatory: siła 2, inteligencja -2, charyzma -2.";
 
 var semigiant = exports.semigiant = "Pół dzika rasa. Legendy głoszą, że powstała z ludzi i olbrzymów. Ich osady najczęściej można znajdują się wśród wysokich wzgórz, pokrytych wrzosowisami. Podstawowe cechy: wzrost: 260 - 320cm, waga: 210 - 300kg. Wiek: do 200 lat. Preferowana profesja: wojownik. Modyfikatory: siła +7, wytrzymałość +7, zręczność: -5, inteligencja -3.";
+
+var races = exports.races = [human, halforc, orc, halfelv, elv, dwarf, gnome, halfling, goblin, troll, semigiant];
 
 /***/ })
 /******/ ]);

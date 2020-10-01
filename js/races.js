@@ -19,7 +19,7 @@ export const racesENTxt = {
     "halfelv":"halfelv",
     "elv":"elv",
     "dwarf":"dwarf",
-    "gnome":"gmome",
+    "gnome":"gnome",
     "halfling":"halfling",
     "goblin":"goblin",
     "troll":"troll",
@@ -49,3 +49,5 @@ export const goblin = "Chyba najbardziej znienawidzona rasa na świecie. Mnożą
 export const troll = "Półdzikie plemiona zamieszkują bagna oraz wrzosowiska. Podstawowe cechy: wzrost: 220 - 260cm, waga: 150 - 200kg. Wiek: do 150 lat. Preferowana profesja: wojownik lub czarodziej. Modyfikatory: siła 2, inteligencja -2, charyzma -2.";
 
 export const semigiant = "Pół dzika rasa. Legendy głoszą, że powstała z ludzi i olbrzymów. Ich osady najczęściej można znajdują się wśród wysokich wzgórz, pokrytych wrzosowisami. Podstawowe cechy: wzrost: 260 - 320cm, waga: 210 - 300kg. Wiek: do 200 lat. Preferowana profesja: wojownik. Modyfikatory: siła +7, wytrzymałość +7, zręczność: -5, inteligencja -3.";
+
+export const races = [human, halforc, orc, halfelv, elv, dwarf, gnome, halfling, goblin, troll, semigiant];
