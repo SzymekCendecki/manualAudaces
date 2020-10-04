@@ -1,4 +1,4 @@
-import { racesPlTxt, races } from './races.js';
+import { racesPlTxt, racesPL } from './races.js';
 
 document.querySelector("#races").addEventListener("click", ()=>{
 
@@ -13,7 +13,7 @@ document.querySelector("#races").addEventListener("click", ()=>{
 
     for (let i = 0; i < Object.keys(racesPlTxt).length; i++){
         document.querySelector("#" + Object.keys(racesPlTxt)[i]).addEventListener("click", () =>{
-            document.querySelector("#mainContainer").innerHTML = races[i];
+            document.querySelector("#mainContainer").innerHTML = racesPL[i];
         })
     }
      
