@@ -99,7 +99,8 @@ document.querySelector("#races").addEventListener("click", function () {
     for (var _i = 0; _i < Object.keys(_races.racesPlTxt).length; _i++) {
         _loop(_i);
     }
-});
+}); //import { header } from './header.js';
+//import { nav } from './nav.js':
 
 /***/ }),
 /* 2 */
