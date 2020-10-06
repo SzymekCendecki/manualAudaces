@@ -1,4 +1,4 @@
-export const header = document.createElement("header");
+const header = document.createElement("header");
 
 const h1 = document.createElement("h1");
 h1.innerHTML = "AUDACES";

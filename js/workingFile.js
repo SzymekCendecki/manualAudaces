@@ -1,6 +1,4 @@
-//import { header } from './header.js';
-//import { nav } from './nav.js':
- import { racesPlTxt, racesPL } from './races.js';
+import { racesPlTxt, racesPL, racesEN } from './races.js';
 
 document.querySelector("#races").addEventListener("click", ()=>{
 

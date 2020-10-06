@@ -99,8 +99,7 @@ document.querySelector("#races").addEventListener("click", function () {
     for (var _i = 0; _i < Object.keys(_races.racesPlTxt).length; _i++) {
         _loop(_i);
     }
-}); //import { header } from './header.js';
-//import { nav } from './nav.js':
+});
 
 /***/ }),
 /* 2 */
@@ -170,7 +169,23 @@ var halforcEN = "This race has a mixed qualities of humans and orcs. They are st
 
 var orcEN = "Orcs are nomadic warriors. Due to their constant movement, little is known about their habits. It is known that they only tolerate the magic of the shamans of their own clans. They are wary of trading. Permanent orcish settlements are few, located on the outskirts of civilized lands. Basic features: height: 170 - 240 cm, weight: 80 - 180 kg. Age: up to 120 years. Preferred profession: warrior. Modifiers: strength +5, endurance +5, intelligence -5, charisma -5.";
 
-var racesEN = exports.racesEN = [humanEN, halforcEN, orcEN];
+var halfelvEN = "Similarly to the Half-orcs, the Half-Elves were made of two different races. They live longer than the average person. They also do not have the powers of magic as elves. Basic features: height: 165 - 210 cm, weight: 40 - 100 kg. Age: up to 350 years. Preferred profession: tendency to be a wizard. Modifiers: strength -3, endurance -3, intelligence +3, charisma +3.";
+
+var elvEN = "Elves are very gifted wizards. Despite their enormous magical abilities, they are equally adept at using the bow. They are long-lived and are therefore mistakenly considered immortal. Basic features: height: 180 - 210 cm, weight: 40 - 90 kg. Age: up to 1500 years. Preferred profession: wizard. Modifiers: strength -5, endurance -5, intelligence +5, charisma +5.";
+
+var dwarfEN = "Due to their specific approach to reality, they are seen as the roughest race in the world. However, they are excellent blacksmiths, miners and warriors. Very allergic to dwarven women, honor and their beards. Basic features: height: 100 - 145 cm, weight : 70-100 kg. Age: up to 500 years. Preferred profession: warrior. Modifiers: strength +4, endurance +4, intelligence -2, charisma -3.";
+
+var gnomeEN = "Gnomes are masters of creating strange devices. They often use magic to create them. Basic features: height: 100 - 145 cm, weight: 50 - 80 kg. Age: up to 350 years. Preferred profession: wizard. Modifiers: strength - 2, stamina -2, dexterity +3, intelligence +3. ";
+
+var halflingEN = "Halfling is the opposite of the Dwarves. A peaceful breed that deals with agriculture. They are famous for producing the best pipe herb and amazing dexterity. Basic features: height: 105 - 150 cm, weight: 60 - 100 kg. Age: up to 250 years. Preferred profession: villain. Modifiers: strength -3, dexterity +6. ";
+
+var goblinEN = "Probably the most hated race in the world. They multiply faster than rats in the sewers. They know no other life than war and thievery. No one knows how many, exactly there are goblin clans. Spider, Frog and Scorpio Every 50 years a 5-year war breaks out between the main clans, the winning clan takes over another 50 years, and the chief becomes something like the godfather of the goblins. In this war, goblins do not attack other lands. The organization of each goblin clan is a combination of something like a mafia and caste division Basic features: height: 80 - 120 cm, weight: 50 - 80 kg. Age: up to 40 years. Preferred profession: villain or warrior. Modifiers: strength 2, endurance - 2, dexterity +4, charisma -4. ";
+
+var trollEN = "Half-wild tribes inhabit swamps and moors. Basic features: height: 220 - 260 cm, weight: 150 - 200 kg. Age: up to 150 years. Preferred profession: warrior or wizard. Modifiers: strength 2, intelligence -2, charisma - 2. ";
+
+var semigiantEN = "Half a wild race. Legends say that it was created from humans and giants. Their settlements are most often located among high hills, covered with heather. Basic features: height: 260 - 320 cm, weight: 210 - 300 kg. Age: up to 200 years. Preferred profession: warrior. Modifiers: strength +7, endurance +7, dexterity: -5, intelligence -3. ";
+
+var racesEN = exports.racesEN = [humanEN, halforcEN, orcEN, halfelvEN, elvEN, dwarfEN, gnomeEN, halflingEN, goblinEN, trollEN, semigiantEN];
 
 /***/ })
 /******/ ]);
