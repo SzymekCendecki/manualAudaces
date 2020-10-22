@@ -1,4 +1,5 @@
 import { racesPlTxt, racesPL, racesEN } from './races.js';
+import { weaponPl } from './weapon.js';
 
 document.querySelector("#races").addEventListener("click", ()=>{
 
@@ -17,4 +18,16 @@ document.querySelector("#races").addEventListener("click", ()=>{
         })
     }
      
+})
+
+document.querySelector("#weapon").addEventListener("click", ()=>{
+    document.querySelector("#mainContainer").innerHTML = "";
+
+    for(let i = 0; i<Object.keys(weaponPl).length; i++){
+        const newP = document.createElement("p");
+        newP.id = Object.keys(weaponPl)[i];
+        newP.innerHTML = Object.values(weaponPl)[i];
+        document.querySelector('#mainContainer').appendChild(newP);
+        
+    }
 })

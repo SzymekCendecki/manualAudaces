@@ -79,6 +79,8 @@ module.exports = __webpack_require__(1);
 
 var _races = __webpack_require__(2);
 
+var _weapon = __webpack_require__(3);
+
 document.querySelector("#races").addEventListener("click", function () {
 
     document.querySelector("#mainContainer").innerHTML = "";
@@ -98,6 +100,17 @@ document.querySelector("#races").addEventListener("click", function () {
 
     for (var _i = 0; _i < Object.keys(_races.racesPlTxt).length; _i++) {
         _loop(_i);
+    }
+});
+
+document.querySelector("#weapon").addEventListener("click", function () {
+    document.querySelector("#mainContainer").innerHTML = "";
+
+    for (var i = 0; i < Object.keys(_weapon.weaponPl).length; i++) {
+        var newP = document.createElement("p");
+        newP.id = Object.keys(_weapon.weaponPl)[i];
+        newP.innerHTML = Object.values(_weapon.weaponPl)[i];
+        document.querySelector('#mainContainer').appendChild(newP);
     }
 });
 
@@ -186,6 +199,31 @@ var trollEN = "Half-wild tribes inhabit swamps and moors. Basic features: height
 var semigiantEN = "Half a wild race. Legends say that it was created from humans and giants. Their settlements are most often located among high hills, covered with heather. Basic features: height: 260 - 320 cm, weight: 210 - 300 kg. Age: up to 200 years. Preferred profession: warrior. Modifiers: strength +7, endurance +7, dexterity: -5, intelligence -3. ";
 
 var racesEN = exports.racesEN = [humanEN, halforcEN, orcEN, halfelvEN, elvEN, dwarfEN, gnomeEN, halflingEN, goblinEN, trollEN, semigiantEN];
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var weaponPl = exports.weaponPl = {
+    "short": "krótka",
+    "oneHand": "jednoręczna",
+    "handAndHalf": "półtoraręczna",
+    "twoHand": "dwuręczna",
+    "distance": "dystansowa",
+    "siege": "oblężnicza",
+    "special": "specjalna",
+    "magic": "magiczna"
+};
+
+var shortPl = "Broń krótka to wszystkie rodzaje noży, sztyletów, kozików, krótkich pałek";
+
+var weaponTypesPl = exports.weaponTypesPl = [shortPl];
 
 /***/ })
 /******/ ]);
