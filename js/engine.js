@@ -221,9 +221,11 @@ var weaponPl = exports.weaponPl = {
     "magic": "magiczna"
 };
 
-var shortPl = "Broń krótka to wszystkie rodzaje noży, sztyletów, kozików, krótkich pałek";
+var shortPl = "Broń krótka to wszystkie rodzaje noży, sztyletów, kozików, krótkich pałek, tasaków lub innych broni 'prowizorycznych', których długość nie przekracza 50 cm. Postać walcząca dwoma takimi broniami otrzymuje niewielkie kary do walki drugą bronią (jeżeli nie posiada umiejętności 'oburęczność').";
 
-var weaponTypesPl = exports.weaponTypesPl = [shortPl];
+var oneHandPl = "Broń jednoręczna: miecze, topory, młoty. Jest podstawową bronią wszystkich profesji związanych z walką. Broń o długości 80 - 100 cm.";
+
+var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl];
 
 /***/ })
 /******/ ]);
