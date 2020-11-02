@@ -225,7 +225,9 @@ var shortPl = "Broń krótka to wszystkie rodzaje noży, sztyletów, kozików, k
 
 var oneHandPl = "Broń jednoręczna: miecze, topory, młoty. Jest podstawową bronią wszystkich profesji związanych z walką. Broń o długości 80 - 100 cm.";
 
-var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl];
+var siegePl = "Machiny oblężnicze to wszelkiej maści kusze wałowe, balisty, katapulty, trebusze czy wieże oblężnicze. Do ich zbudowania oraz obsługi potrzebni są wykwalifikowani rzemieślnicy oraz specjalnie przeszkolona obsługa. Bez takiego sprzętu oraz osób nie sposób skutecznie prowadzić oblężenia oraz bronić murów. Mogą strzalać ogromnymi bełtami, kamiennymi kulami a czasem się zdarza, że truchłami padłych zwierząt.";
+
+var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl, siegePl];
 
 /***/ })
 /******/ ]);

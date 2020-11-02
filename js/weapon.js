@@ -13,4 +13,6 @@ const shortPl = "Broń krótka to wszystkie rodzaje noży, sztyletów, kozików,
 
 const oneHandPl = "Broń jednoręczna: miecze, topory, młoty. Jest podstawową bronią wszystkich profesji związanych z walką. Broń o długości 80 - 100 cm.";
 
-export const weaponTypesPl = [shortPl, oneHandPl];
+const siegePl = "Machiny oblężnicze to wszelkiej maści kusze wałowe, balisty, katapulty, trebusze czy wieże oblężnicze. Do ich zbudowania oraz obsługi potrzebni są wykwalifikowani rzemieślnicy oraz specjalnie przeszkolona obsługa. Bez takiego sprzętu oraz osób nie sposób skutecznie prowadzić oblężenia oraz bronić murów. Mogą strzalać ogromnymi bełtami, kamiennymi kulami a czasem się zdarza, że truchłami padłych zwierząt."
+
+export const weaponTypesPl = [shortPl, oneHandPl, siegePl];
