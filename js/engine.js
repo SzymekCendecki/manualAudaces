@@ -225,9 +225,17 @@ var shortPl = "Broń krótka to wszystkie rodzaje noży, sztyletów, kozików, k
 
 var oneHandPl = "Broń jednoręczna: miecze, topory, młoty. Jest podstawową bronią wszystkich profesji związanych z walką. Broń o długości 80 - 100 cm.";
 
+var handAndHalfPl = "Wersja pośrednia pomiędzy bronią jednoręczną a dwuręczną. Można walczyć za pomocą jednej, jak i dwóch rąk. Najbardziej znaną bronią półtorareczną jest miecz katowski.";
+
+var twoHandPl = "Broń dwuręczna jest to taka broń, którą walczy się obiema dłoniami. Są to wszelkiej maści bronie drzewcowe (np. włócznie, partyzany, glewnie, cepy bojowe), strzeleckie (łuki i kusze) a także miecze, czy młoty. Ze względu na rozmiar broni (sposób używania), używanie tarczy większej niż puklerz nie jest możliwe.";
+
+var distancePl = "Broń dystansowa to broń strzelająca. Są to łuki, kusze, proce oraz niektóre bronie specjalne (np. strzałki lub 'gwiazdki'). Bronią dystansową są także niektóre bronie oblężnicze: kusze wałowe, katapulty trebusze itd.";
+
 var siegePl = "Machiny oblężnicze to wszelkiej maści kusze wałowe, balisty, katapulty, trebusze czy wieże oblężnicze. Do ich zbudowania oraz obsługi potrzebni są wykwalifikowani rzemieślnicy oraz specjalnie przeszkolona obsługa. Bez takiego sprzętu oraz osób nie sposób skutecznie prowadzić oblężenia oraz bronić murów. Mogą strzalać ogromnymi bełtami, kamiennymi kulami a czasem się zdarza, że truchłami padłych zwierząt.";
 
-var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl, siegePl];
+var magicPL = "Bronią magiczną jest każda broń, która została w jakiś sposób umagiczniona, czyli nabrała cech które zwiększaja jej możliwości. Najczęściej dzieje się to za pomocą zaklęć magów lub broń została stworzona z materiałów magicznych. Cechy magicznej broni uzależnione są od użytych magicznych materiałów, zaklęć oraz umiejętności osoby tworzącej taką broń.";
+
+var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl, handAndHalfPl, twoHandPl, distancePl, siegePl, magicPL];
 
 /***/ })
 /******/ ]);
