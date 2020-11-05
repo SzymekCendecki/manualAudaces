@@ -233,9 +233,11 @@ var distancePl = "Broń dystansowa to broń strzelająca. Są to łuki, kusze, p
 
 var siegePl = "Machiny oblężnicze to wszelkiej maści kusze wałowe, balisty, katapulty, trebusze czy wieże oblężnicze. Do ich zbudowania oraz obsługi potrzebni są wykwalifikowani rzemieślnicy oraz specjalnie przeszkolona obsługa. Bez takiego sprzętu oraz osób nie sposób skutecznie prowadzić oblężenia oraz bronić murów. Mogą strzalać ogromnymi bełtami, kamiennymi kulami a czasem się zdarza, że truchłami padłych zwierząt.";
 
+var specialPl = "Broń specjalistyczna to  broń, którą posługuja się głównie przestępcy. Są to wszelkiej maści garoty, strzałki i gwiazdki do rzucanie, sztylety o dwóch ostrzach itd. ";
+
 var magicPL = "Bronią magiczną jest każda broń, która została w jakiś sposób umagiczniona, czyli nabrała cech które zwiększaja jej możliwości. Najczęściej dzieje się to za pomocą zaklęć magów lub broń została stworzona z materiałów magicznych. Cechy magicznej broni uzależnione są od użytych magicznych materiałów, zaklęć oraz umiejętności osoby tworzącej taką broń.";
 
-var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl, handAndHalfPl, twoHandPl, distancePl, siegePl, magicPL];
+var weaponTypesPl = exports.weaponTypesPl = [shortPl, oneHandPl, handAndHalfPl, twoHandPl, distancePl, siegePl, specialPl, magicPL];
 
 /***/ })
 /******/ ]);
